@@ -3,13 +3,13 @@ backend:
   repo: chrisatbrookes/bigtext # Path to your GitHub repository
   open_authoring: true
   branch: master # Branch to update (master by default)
-  site_domain: bigtext.netlify.app #Your site on netlify
+  site_domain: blog-mbktechstudio.netlify.app #Your site on netlify
   use_graphql: true
 
 publish_mode: editorial_workflow
 show_preview_links: true
-display_url: https://bigtext.netlify.app
-logo_url: https://bigtext.netlify.app/uploads/btlogo.png #This image will display at login time
+display_url: https://blog-mbktechstudio.netlify.app
+logo_url: https://blog-mbktechstudio.netlify.app/uploads/btlogo.png #This image will display at login time
 
 # Do NOT edit below this line
 
@@ -423,7 +423,7 @@ collections:
             name: "github"
             widget: "string"
             required: false
-            hint: "Put your Github repo in here and then people can see your code. You just need the username and repo name like this  `username/myrepo`"
+            hint: "Put your Github repo in here and then people can see your code. You just need the username and repo name like this  `MIbnEKhalid/Blog.MIbnEKhalid.github.io`"
 
       - label: "Turn on some share buttons"
         name: "share_buttons"
