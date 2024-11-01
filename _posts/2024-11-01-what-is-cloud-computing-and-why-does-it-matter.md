@@ -1,10 +1,8 @@
 ---
 layout: post
-title: What is Cloud Computing and Why Does it Matter?
+title: "What is Cloud Computing and Why Does it Matter?"
 date: 2024-11-02T02:03:00.000Z
-categories:
-  - jekyll
-  - update
+categories: jekyll update
 ---
 What is Cloud Computing and Why Does it Matter?
 
