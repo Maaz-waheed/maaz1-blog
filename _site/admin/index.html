@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link rel="icon" type="image/x-icon" href="https://mbktechstudio.com/Assets/Images/dgicon.svg">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <header>
@@ -70,8 +69,12 @@
 <body>
  
     <section class="about">
-        <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-
+        <div class="main-content" id="main-content">
+            <head>
+                <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+            </head>
+            <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+        </div>
     </section>
 
     
@@ -84,6 +87,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js"></script>
 
     <script>
+     function onLoginSuccess() {
+        // Get the main content element
+        const mainContent = document.getElementById('main-content');
+        
+        // Remove all other elements
+        document.body.innerHTML = '';
+        
+        // Append the main content back to the body
+        document.body.appendChild(mainContent);
+    } 
         // Sticky Navigation Menu JS Code
         let nav = document.querySelector("nav");
         let scrollBtn = document.querySelector(".scroll-button a");
