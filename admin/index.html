@@ -67,16 +67,15 @@
     }
   </style>
 <body>
- 
+    <main id="main-content" class="main-class">
+
     <section class="about">
-        <div class="main-content" id="main-content">
-            <head>
+             <head>
                 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
             </head>
             <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-        </div>
-    </section>
-
+     </section>
+</main>
     
     <footer>
         <div class="text">
@@ -87,16 +86,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js"></script>
 
     <script>
-     function onLoginSuccess() {
-        // Get the main content element
-        const mainContent = document.getElementById('main-content');
-        
-        // Remove all other elements
-        document.body.innerHTML = '';
-        
-        // Append the main content back to the body
-        document.body.appendChild(mainContent);
-    } 
+    document.addEventListener('DOMContentLoaded', function() {
+        netlifyIdentity.on('init', user => {
+            if (user) {
+                onLoginSuccess();
+            }
+        });
+
+        function onLoginSuccess() {
+            const mainContent = document.getElementById('main-content');
+            document.body.innerHTML = '';
+            document.body.appendChild(mainContent);
+        }
+    });
         // Sticky Navigation Menu JS Code
         let nav = document.querySelector("nav");
         let scrollBtn = document.querySelector(".scroll-button a");
