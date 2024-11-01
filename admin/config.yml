@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: chrisatbrookes/bigtext # Path to your GitHub repository
+  repo: MIbnEKhalid/Blog.MIbnEKhalid.github.io # Path to your GitHub repository
   open_authoring: true
   branch: master # Branch to update (master by default)
   site_domain: blog-mbktechstudio.netlify.app #Your site on netlify
