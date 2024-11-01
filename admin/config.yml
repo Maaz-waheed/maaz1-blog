@@ -1,0 +1,16 @@
+backend:
+  name: git-gateway
+  branch: main # or your default branch name
+
+media_folder: "assets/images/upload" # Where uploaded images go in the repo
+public_folder: "/assets/images/upload" # Where the CMS finds images in your live site
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "blog" # Folder for blog posts
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
