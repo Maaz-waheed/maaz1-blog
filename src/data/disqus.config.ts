@@ -5,5 +5,5 @@ interface DisqusConfig {
 
 export const disqusConfig: DisqusConfig = {
 	enabled: true,
-	shortname: ''
+	shortname: 'disqus_5mkbJGM9B5'
 }

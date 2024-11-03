@@ -46,6 +46,10 @@
 
   - schema for posts
 
+- `/src/components/pages/index.astro`
+
+  - schema for posts
+
 - `/public/robot.txt`
 
   - edit link to your website sitemap
