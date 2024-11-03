@@ -1,0 +1,23 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "src/assets/images"
+public_folder: "../../assets/images"
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "src/content/blog"
+    create: true
+    extension: mdx
+    format: frontmatter
+    fields:
+      - { label: "Cover Image", name: "heroImage", widget: "image", required: true }
+      - { label: "Category", name: "category", widget: "select", options: [ Tutorials,Demo,News,Docs,Test ], required: true }
+      - { label: "Description", name: "description", widget: "string", required: true }
+      - { label: "Publication Date", name: "pubDate", widget: "datetime", required: true }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Tags", name: "tags", widget: "list", required: true }
+      - { label: "Title", name: "title", widget: "string", required: true }
+      - { label: "Body", name: "body", widget: "markdown", required: true }
