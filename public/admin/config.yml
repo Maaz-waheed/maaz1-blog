@@ -13,22 +13,12 @@ collections:
     extension: mdx
     format: frontmatter
     fields:
-      - { label: "Notes", name: "notes", widget: "text", required: false, hint: "1: Use `#` for main heading  2: Use `##` for main subheading 3: Continue with more `#` for deeper levels of headings 4: Ensure to include at least one tag 5: Title has a 1000 letter limit" }
+      - { label: "Notes", name: "notes", widget: "text", required: false}
       - { label: "Cover Image", name: "heroImage", widget: "image", required: true }
-      - { label: "Category", name: "category", widget: "select", options: [ Tutorials,Demo,News,Docs,Test ], required: true }
+      - { label: "Category", name: "category", widget: "select", options: [ Tutorials, Demo, News, Docs, Test ], required: true }
       - { label: "Description", name: "description", widget: "string", required: true }
       - { label: "Publication Date", name: "pubDate", widget: "datetime", required: true }
       - { label: "Draft", name: "draft", widget: "boolean", default: false }
-      - { label: "Tags", name: "tags", widget: "list", required: true }
-      - { label: "Title", name: "title", widget: "string", required: true }
-      - { label: "Body", name: "body", widget: "markdown", required: true }
-  
-  # This configuration file is used for setting up the index in the admin panel.
-  # Guidelines:
-  # - Use `#` for main heading
-  # - Use `##` for main subheading
-  # - Use `###` for subheading under main subheading
-  # - Continue with more `#` for deeper levels of headings
-  # - Ensure to include at least one tag
-  # - Title has a 1000 letter limit
- 
+      - { label: "Tags", name: "tags", widget: "list", required: true, hint: "Ensure to include at least one tag" }
+      - { label: "Title", name: "title", widget: "string", required: true, hint: "Title has a 1000 letter limit" }
+      - { label: "Body", name: "body", widget: "markdown", required: true, hint: "1: Use `#` for main heading  2: Use `##` for main subheading 3: Continue with more `#` for deeper levels of headings " }
