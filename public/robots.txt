@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://blog.mbktechstudio.com/sitemap-index.xml
+Sitemap: https://maazwaheed-project.netlify.app/sitemap-index.xml
