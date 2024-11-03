@@ -13,6 +13,15 @@ collections:
     extension: mdx
     format: frontmatter
     fields:
+      - { label: "Notes", name: "notes", widget: "text", required: false, hint: |
+          Guidelines:
+          - Use `#` for main heading
+          - Use `##` for main subheading
+          - Use `###` for subheading under main subheading
+          - Continue with more `#` for deeper levels of headings
+          - Ensure to include at least one tag
+          - Title has a 1000 letter limit
+        }      
       - { label: "Cover Image", name: "heroImage", widget: "image", required: true }
       - { label: "Category", name: "category", widget: "select", options: [ Tutorials,Demo,News,Docs,Test ], required: true }
       - { label: "Description", name: "description", widget: "string", required: true }
@@ -21,3 +30,5 @@ collections:
       - { label: "Tags", name: "tags", widget: "list", required: true }
       - { label: "Title", name: "title", widget: "string", required: true }
       - { label: "Body", name: "body", widget: "markdown", required: true }
+
+ 
