@@ -22,10 +22,11 @@
 	}
 
 	html.dark .shiki,
-	html.dark .shiki span {
-	  color: var(--shiki-dark) !important;
-	  background-color: theme(colors.gray.900) !important;
-	}
+        html.dark .shiki span {
+            color: var(--midnight-text) !important; /* Updated text color */
+            background-color: var(--midnight-background) !important; /* Updated background color */
+            border: 1px solid var(--midnight-highlight); /* Optional border for additional style */
+}
 }
 
 .glass {
